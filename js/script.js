@@ -111,3 +111,20 @@ if(form){
     return false;
   });
 }
+
+// V16 budget matching
+const budgetMessage=document.getElementById('budgetMessage');
+document.querySelectorAll('.budgetGrid button').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.budgetGrid button').forEach(x=>x.classList.remove('active'));
+    btn.classList.add('active');
+    const b=btn.dataset.budget;
+    const msg={
+      '7억대':'7억대 예산이라면 75㎡와 84㎡ 주택형을 중심으로 실제 잔여세대와 동·호수를 확인해 보세요.',
+      '9억대':'9억대 예산이라면 102㎡ 중심으로 공급금액과 옵션·자금계획을 함께 확인해 보세요.',
+      '10억대':'10억대 예산이라면 124㎡의 실제 가능 세대와 계약조건을 확인해 보세요.',
+      '20억대':'20억대 예산이라면 166㎡P의 공급 여부와 세부 조건을 별도로 확인해 보세요.'
+    }[b];
+    budgetMessage.textContent=msg+'  상담: 010-8900-8869';
+  });
+});
