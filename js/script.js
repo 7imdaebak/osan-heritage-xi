@@ -92,3 +92,22 @@ document.querySelector('.consultGo').addEventListener('click',()=>{
   const pre='[상담 선택]\\n주택형: '+(selectedType||'미선택')+'\\n관심목적: '+(selectedPurpose||'미선택')+'\\n\\n';
   if(!msg.value.startsWith('[상담 선택]')) msg.value=pre+msg.value;
 });
+
+// V9 production form UX: validation + UTM capture + no fake submission.
+const params=new URLSearchParams(location.search);
+const utm={source:params.get('utm_source')||'',medium:params.get('utm_medium')||'',campaign:params.get('utm_campaign')||'',term:params.get('utm_term')||''};
+try{localStorage.setItem('osan_xi_utm',JSON.stringify(utm));}catch(e){}
+const form=document.getElementById('consultForm');
+if(form){
+  form.addEventListener('submit',e=>{
+    e.preventDefault();
+    const consent=document.getElementById('privacyConsent');
+    if(consent && !consent.checked){alert('개인정보 수집 및 이용에 동의해 주세요.');return false;}
+    const name=form.querySelector('input[name="name"]')?.value?.trim()||'';
+    const phone=form.querySelector('input[name="phone"]')?.value?.trim()||'';
+    if(!name || !phone){alert('이름과 연락처를 입력해 주세요.');return false;}
+    alert('상담 신청 내용이 준비되었습니다.\\n현재 버전은 서버 접수 기능이 연결되지 않아 전화 상담(1544-5403)으로 접수해 주세요.');
+    location.href='tel:15445403';
+    return false;
+  });
+}
