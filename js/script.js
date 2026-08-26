@@ -159,3 +159,18 @@ if(copyBtn){
     catch(e){alert(text);}
   });
 }
+
+// V18 reference-style reservation UX
+const reservationForm=document.getElementById('reservationForm');
+if(reservationForm){
+  reservationForm.addEventListener('submit',e=>{
+    e.preventDefault();
+    const consent=document.getElementById('refConsent');
+    if(!consent.checked){alert('개인정보 수집·이용 및 처리 위탁에 동의해 주세요.');return;}
+    const name=reservationForm.elements.name.value.trim();
+    const phone=reservationForm.elements.phone.value.trim();
+    if(!name||!phone){alert('성명과 연락처를 입력해주세요.');return;}
+    alert('상담 요청 내용이 준비되었습니다. 현재 버전은 실제 접수 DB가 연결되지 않아 010-8900-8869 전화상담으로 연결합니다.');
+    location.href='tel:01089008869';
+  });
+}

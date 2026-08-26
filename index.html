@@ -17,6 +17,19 @@
 <meta name="theme-color" content="#0b2746">
 </head>
 <body>
+<div class="refTop">
+  <div class="refTopInner">
+    <a href="#top" class="brand">오산 헤리티지자이</a>
+    <nav>
+      <a href="#top">HOME</a>
+      <a href="#officialFacts">사업개요</a>
+      <a href="#floor">평면안내</a>
+      <a href="#realGallery">인테리어</a>
+    </nav>
+    <a class="refTopCall" href="tel:01089008869">전화상담</a>
+  </div>
+</div>
+
 <div class="adTopbar"><span>오산 헤리티지자이</span><b>현재 조건 상담</b><a href="tel:01089008869">010-8900-8869</a></div>
 <header id="header">
   <a class="brand" href="#home"><img src="images/logo-transparent.png" alt="오산 헤리티지자이"></a>
@@ -33,7 +46,7 @@
 </header>
 
 <main>
-<section class="hero" id="home">
+<div id="top"></div><section class="hero" id="home">
   <div class="heroImage"></div><div class="heroShade"></div>
   <div class="heroContent">
     <p class="eyebrow">OSAN HERITAGE XI · LEAD THE CHANGE</p>
@@ -328,6 +341,54 @@
   <div class="scheduleNote"><b>모집공고일</b><span>2026.07.10</span><b>계약기간</b><span>2026.08.10 ~ 2026.08.12</span></div>
   <p class="legalNote">※ 위 일정은 2026년 7월 10일 모집공고 및 공식 안내 페이지를 기준으로 작성했습니다. 청약 접수 전 한국부동산원 청약홈과 최신 공고문을 다시 확인하세요.</p>
 </section>
+
+
+<section class="refLandingInfo">
+  <div class="refLandingInner">
+    <div class="sectionKicker">OSAN HERITAGE XI</div>
+    <h2>오산 헤리티지자이<br><em>핵심 정보를 한눈에</em></h2>
+    <p class="refLandingLead">공식 사업개요를 기준으로 핵심 정보만 간결하게 정리했습니다. 현재 청약 일정은 종료된 상태이므로 잔여세대 및 현재 계약조건은 상담을 통해 확인해 주세요.</p>
+    <div class="refCards">
+      <article class="refCard"><span>PROJECT</span><b>1,783세대</b><p>1BL 1,069세대 · 2BL 714세대</p></article>
+      <article class="refCard"><span>UNIT</span><b>75~166㎡</b><p>75 · 84A~D · 102 · 124 · 166P</p></article>
+      <article class="refCard"><span>CONSULT</span><b>010-8900-8869</b><p>현재 조건 · 잔여세대 · 방문상담</p></article>
+    </div>
+  </div>
+</section>
+<section class="refSections">
+  <div class="refSectionsInner">
+    <div class="sectionKicker">INFORMATION</div>
+    <h2 class="refSectionTitle">원하시는 정보를<br><em>바로 확인하세요.</em></h2>
+    <div class="refLinks">
+      <a class="refLink" href="https://www.xi-home.kr/사업개요/" target="_blank" rel="noopener"><small>01 · PROJECT</small><b>사업개요</b><span>공식 사업정보 확인 ↗</span></a>
+      <a class="refLink" href="https://www.xi-home.kr/평면타입/" target="_blank" rel="noopener"><small>02 · UNIT</small><b>평면안내</b><span>75~166㎡P 공식 평면 ↗</span></a>
+      <a class="refLink" href="https://www.xi-home.kr/단지배치/" target="_blank" rel="noopener"><small>03 · COMPLEX</small><b>단지·커뮤니티</b><span>배치도·동호수·커뮤니티 ↗</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="reservation" id="reservation">
+  <div class="reservationInner">
+    <div class="reservationHead">
+      <div class="sectionKicker">QUICK CONSULTATION & VISIT</div>
+      <h2>빠른 상담신청 및<br><em>방문예약</em></h2>
+      <p>성명과 연락처, 방문 희망일을 남겨주시면 상담을 위해 확인할 수 있도록 준비했습니다.</p>
+    </div>
+    <form id="reservationForm" class="reservationForm">
+      <label>1. 성명 <b>*</b><input name="name" required placeholder="성명을 입력해주세요"></label>
+      <label>2. 연락처 <b>*</b><input name="phone" required inputmode="tel" placeholder="010 1234 5678"></label>
+      <div class="twoFields">
+        <label>3. 방문예약일자<input name="date" type="date"></label>
+        <label>4. 방문예약시간<select name="time"><option value="">시간 선택</option><option>10:00</option><option>11:00</option><option>13:00</option><option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option></select></label>
+      </div>
+      <label class="refConsent"><input type="checkbox" id="refConsent" required> 개인정보 수집·이용 및 처리 위탁에 동의합니다. <a href="#privacy">내용보기</a></label>
+      <button type="submit">지금 상담신청하기</button>
+      <a class="directCall" href="tel:01089008869">☎ 010-8900-8869 전화 바로연결</a>
+      <p class="formNote">※ 현재 GitHub Pages 버전은 상담 DB에 개인정보를 저장하지 않습니다. 실제 접수 연결 전에는 네이버폼/Google Forms/CRM 등 승인된 접수 시스템을 연결해야 합니다.</p>
+    </form>
+  </div>
+</section>
+
 <section class="faq" id="faq">
   <div class="sectionKicker">FAQ</div><h2>가장 많이 묻는 질문</h2>
   <details open><summary>청약 자격은 어디에서 확인하나요?</summary><p>최신 입주자모집공고의 자격 요건을 기준으로 확인합니다.</p></details>
@@ -565,6 +626,54 @@
 </main>
 <section class="trust"><div><b>정확한 정보</b><span>공식 자료 기준으로 안내</span></div><div><b>현재 조건</b><span>실시간 변동 사항은 상담 확인</span></div><div><b>맞춤 상담</b><span>희망 타입부터 함께 검토</span></div></section>
 
+
+
+<section class="refLandingInfo">
+  <div class="refLandingInner">
+    <div class="sectionKicker">OSAN HERITAGE XI</div>
+    <h2>오산 헤리티지자이<br><em>핵심 정보를 한눈에</em></h2>
+    <p class="refLandingLead">공식 사업개요를 기준으로 핵심 정보만 간결하게 정리했습니다. 현재 청약 일정은 종료된 상태이므로 잔여세대 및 현재 계약조건은 상담을 통해 확인해 주세요.</p>
+    <div class="refCards">
+      <article class="refCard"><span>PROJECT</span><b>1,783세대</b><p>1BL 1,069세대 · 2BL 714세대</p></article>
+      <article class="refCard"><span>UNIT</span><b>75~166㎡</b><p>75 · 84A~D · 102 · 124 · 166P</p></article>
+      <article class="refCard"><span>CONSULT</span><b>010-8900-8869</b><p>현재 조건 · 잔여세대 · 방문상담</p></article>
+    </div>
+  </div>
+</section>
+<section class="refSections">
+  <div class="refSectionsInner">
+    <div class="sectionKicker">INFORMATION</div>
+    <h2 class="refSectionTitle">원하시는 정보를<br><em>바로 확인하세요.</em></h2>
+    <div class="refLinks">
+      <a class="refLink" href="https://www.xi-home.kr/사업개요/" target="_blank" rel="noopener"><small>01 · PROJECT</small><b>사업개요</b><span>공식 사업정보 확인 ↗</span></a>
+      <a class="refLink" href="https://www.xi-home.kr/평면타입/" target="_blank" rel="noopener"><small>02 · UNIT</small><b>평면안내</b><span>75~166㎡P 공식 평면 ↗</span></a>
+      <a class="refLink" href="https://www.xi-home.kr/단지배치/" target="_blank" rel="noopener"><small>03 · COMPLEX</small><b>단지·커뮤니티</b><span>배치도·동호수·커뮤니티 ↗</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="reservation" id="reservation">
+  <div class="reservationInner">
+    <div class="reservationHead">
+      <div class="sectionKicker">QUICK CONSULTATION & VISIT</div>
+      <h2>빠른 상담신청 및<br><em>방문예약</em></h2>
+      <p>성명과 연락처, 방문 희망일을 남겨주시면 상담을 위해 확인할 수 있도록 준비했습니다.</p>
+    </div>
+    <form id="reservationForm" class="reservationForm">
+      <label>1. 성명 <b>*</b><input name="name" required placeholder="성명을 입력해주세요"></label>
+      <label>2. 연락처 <b>*</b><input name="phone" required inputmode="tel" placeholder="010 1234 5678"></label>
+      <div class="twoFields">
+        <label>3. 방문예약일자<input name="date" type="date"></label>
+        <label>4. 방문예약시간<select name="time"><option value="">시간 선택</option><option>10:00</option><option>11:00</option><option>13:00</option><option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option></select></label>
+      </div>
+      <label class="refConsent"><input type="checkbox" id="refConsent" required> 개인정보 수집·이용 및 처리 위탁에 동의합니다. <a href="#privacy">내용보기</a></label>
+      <button type="submit">지금 상담신청하기</button>
+      <a class="directCall" href="tel:01089008869">☎ 010-8900-8869 전화 바로연결</a>
+      <p class="formNote">※ 현재 GitHub Pages 버전은 상담 DB에 개인정보를 저장하지 않습니다. 실제 접수 연결 전에는 네이버폼/Google Forms/CRM 등 승인된 접수 시스템을 연결해야 합니다.</p>
+    </form>
+  </div>
+</section>
+
 <section class="faq" id="faq">
   <div class="faqInner">
     <div class="sectionKicker">FAQ</div>
@@ -604,4 +713,4 @@
   </div>
 </div>
 <script src="js/script.js"></script>
-</body></html>
+<div class="refBottom"><a href="#reservation">상담예약</a><a href="tel:01089008869">전화 바로연결</a></div></body></html>

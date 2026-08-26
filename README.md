@@ -154,3 +154,21 @@ images 폴더에 공식 이미지 파일을 추가한 뒤 index.html의 placehol
 - 선택 결과를 한 줄 상담요약으로 표시
 - 상담내용 복사 기능
 - 010-8900-8869 전화 CTA 유지
+
+## V18 — Reference-style rebuild
+- User-provided reference site structure adopted: HOME / 사업개요 / 평면안내 / 인테리어
+- Prominent 빠른 상담신청 및 방문예약 form
+- 이름 / 연락처 / 방문예약일자 / 방문예약시간
+- 개인정보 동의
+- 010-8900-8869 direct call
+- Mobile fixed 상담예약 / 전화 바로연결
+- No unverified giveaway or fake inquiry count
+- Actual lead database intentionally not faked; connect approved form/CRM endpoint before collecting production leads
+
+## V19 — Reference-first landing
+- 참고 사이트의 단순한 분양 원페이지 구조를 우선하도록 공개 UI 재정리
+- HOME / 사업개요 / 평면안내 / 인테리어 상단 네비게이션 유지
+- 핵심정보 → 공식자료 → 빠른 상담신청/방문예약 순서
+- 사용자 연락처 010-8900-8869 적용
+- 참고 사이트의 원문/이미지/개인정보처리 코드를 그대로 복제하지 않고 독립적으로 구성
+- 확인된 공식 자료 링크 제공
