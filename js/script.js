@@ -174,3 +174,22 @@ if(reservationForm){
     location.href='tel:01089008869';
   });
 }
+
+// V20 popup: 3-day suppression, inspired by common landing UX but independently implemented.
+(function(){
+  const popup=document.getElementById('v20Popup');
+  const close=document.getElementById('v20Close');
+  const hide=document.getElementById('v20Hide');
+  const reserve=document.getElementById('v20PopupReserve');
+  if(!popup) return;
+  let hidden=false;
+  try{hidden=localStorage.getItem('osan_v20_popup_hide_until') && Number(localStorage.getItem('osan_v20_popup_hide_until'))>Date.now();}catch(e){}
+  if(hidden) popup.style.display='none';
+  function closePopup(){popup.style.display='none';}
+  close?.addEventListener('click',closePopup);
+  reserve?.addEventListener('click',closePopup);
+  hide?.addEventListener('click',()=>{
+    try{localStorage.setItem('osan_v20_popup_hide_until',String(Date.now()+3*24*60*60*1000));}catch(e){}
+    closePopup();
+  });
+})();

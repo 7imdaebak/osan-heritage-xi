@@ -172,3 +172,19 @@ images 폴더에 공식 이미지 파일을 추가한 뒤 index.html의 placehol
 - 사용자 연락처 010-8900-8869 적용
 - 참고 사이트의 원문/이미지/개인정보처리 코드를 그대로 복제하지 않고 독립적으로 구성
 - 확인된 공식 자료 링크 제공
+
+## V20 — Reference-structure implementation
+- 참고 페이지의 핵심 IA를 그대로 따름: HOME / 사업개요 / 평면안내 / 인테리어 / 관심고객등록
+- 빠른 상담신청 및 방문예약 폼을 중심으로 구성
+- 팝업/모바일 고정 CTA 등 참고 페이지에서 확인되는 UX를 독립 코드로 재구현
+- 담당자: 김영태
+- 전화: 010-8900-8869
+- 원본 사이트의 소스/고유 문구/이미지를 그대로 복제하지 않음
+
+## V21 — final reference-inspired style
+- Reference site's information architecture retained while independently designed
+- Deep navy + gold visual identity
+- Project overview / unit plan / complex-community / reservation flow
+- Official pages used for actual plan and complex imagery
+- Consultant: 김영태
+- Phone: 010-8900-8869
