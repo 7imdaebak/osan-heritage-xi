@@ -17,8 +17,8 @@
     <a href="#premium">프리미엄</a>
     <a href="#location">입지</a>
     <a href="#future">미래가치</a>
-    <a href="#complex">단지</a>
-    <a href="#info">분양정보</a><a href="#schedule">청약</a>
+    <a href="#complex">단지</a><a href="#gallery">갤러리</a>
+    <a href="#info">분양정보</a><a href="#schedule">청약정보</a><a href="#current">현재안내</a>
     <a href="#contact" class="navCta">상담예약</a>
   </nav>
 </header>
@@ -112,29 +112,133 @@
 </section>
 
 <section class="complex" id="complex">
-  <div class="sectionKicker darkKicker">COMPLEX & COMMUNITY</div>
-  <h2>집을 넘어<br><em>하나의 라이프스타일</em></h2>
-  <div class="complexGrid">
-    <div class="complexCard big"><span>01</span><h3>Premium Landscape</h3><p>쾌적한 일상과 여유를 위한 조경과 휴식 공간.</p></div>
-    <div class="complexCard"><span>02</span><h3>Community</h3><p>운동·문화·학습을 위한 생활 편의 공간.</p></div>
-    <div class="complexCard"><span>03</span><h3>Family Life</h3><p>가족의 일상을 고려한 편리하고 안전한 생활.</p></div>
+  <div class="sectionKicker darkKicker">COMPLEX EXPERIENCE</div>
+  <h2>단지를 보는 순간<br><em>생활이 그려집니다.</em></h2>
+  <p class="complexLead">공식 대표 홈페이지에서 제공하는 단지배치도·동호수배치도·커뮤니티 안내를 기준으로 연결할 수 있도록 구성했습니다.</p>
+  <div class="complexTabs">
+    <button class="complexTab active" data-view="overview">대표 조감도</button>
+    <button class="complexTab" data-view="layout1">1단지 배치</button>
+    <button class="complexTab" data-view="layout2">2단지 배치</button>
+    <button class="complexTab" data-view="community">커뮤니티</button>
   </div>
-  <p class="legalNote">※ 실제 커뮤니티 시설 구성은 공식 분양자료와 사업계획을 기준으로 최종 반영합니다.</p>
+  <div class="complexViewer active" id="view-overview">
+    <img src="images/hero.jpg" alt="오산 헤리티지자이 대표 조감도" class="viewerImage" data-modal="대표 조감도">
+    <div class="viewerCaption"><b>대표 조감도</b><span>단지의 전체 분위기를 먼저 확인하세요.</span></div>
+  </div>
+  <div class="complexViewer" id="view-layout1">
+    <div class="diagramPlaceholder"><span>1BL</span><strong>단지배치도</strong><p>공식 배치도 이미지를 이 영역에 추가하면 바로 확대 갤러리로 표시됩니다.</p></div>
+    <div class="viewerCaption"><b>1단지 배치</b><span>실제 공식 배치도 연결 준비 완료</span></div>
+  </div>
+  <div class="complexViewer" id="view-layout2">
+    <div class="diagramPlaceholder"><span>2BL</span><strong>단지배치도</strong><p>공식 배치도 이미지를 이 영역에 추가하면 바로 확대 갤러리로 표시됩니다.</p></div>
+    <div class="viewerCaption"><b>2단지 배치</b><span>실제 공식 배치도 연결 준비 완료</span></div>
+  </div>
+  <div class="complexViewer" id="view-community">
+    <div class="communityPlaceholder">
+      <div>LOUNGE</div><div>LIBRARY</div><div>FITNESS</div><div>CLUB CLOUD</div>
+    </div>
+    <div class="viewerCaption"><b>커뮤니티</b><span>공식 커뮤니티 이미지를 추가하면 동일한 방식으로 확대됩니다.</span></div>
+  </div>
+  <div class="officialActions">
+    <a href="https://xi-heritage.co.kr/%EB%8B%A8%EC%A7%80%EC%95%88%EB%82%B4/" target="_blank" rel="noopener">공식 단지안내 보기 ↗</a>
+    <a href="https://xi-heritage.co.kr/%EC%84%B8%EB%8C%80%EC%95%88%EB%82%B4/" target="_blank" rel="noopener">공식 세대안내 보기 ↗</a>
+  </div>
 </section>
 
-<section class="info" id="info">
-  <div class="sectionKicker darkKicker">INFORMATION</div>
-  <h2>분양·청약 정보를<br><em>한눈에</em> 확인하세요.</h2>
-  <div class="infoGrid">
-    <article><span>01</span><h3>분양가</h3><p>타입별 공급금액과 계약조건을 공식 자료 기준으로 반영합니다.</p><a href="#contact">상담하기 →</a></article>
-    <article><span>02</span><h3>청약일정</h3><p>청약 접수부터 당첨자 발표와 계약까지 일정별로 안내합니다.</p><a href="#contact">일정 문의 →</a></article>
-    <article><span>03</span><h3>주택형 안내</h3><p>75㎡ 및 84A·84B·84C·84D 등 확인 가능한 타입 정보를 연결합니다.</p><a href="#contact">타입 문의 →</a></article>
-    <article><span>04</span><h3>FAQ</h3><p>청약·대출·전매·계약 등 자주 묻는 질문을 정리합니다.</p><a href="#faq">FAQ 보기 →</a></article>
+<section class="gallery" id="gallery">
+  <div class="sectionKicker">PREMIUM GALLERY</div>
+  <h2>고객이 가장 궁금해하는<br><em>공간을 크게 보여주세요.</em></h2>
+  <p>이미지를 클릭하면 전체 화면 갤러리로 확대됩니다.</p>
+  <div class="galleryGrid">
+    <button class="galleryCard" data-modal="대표 조감도"><img src="images/hero.jpg" alt="대표 조감도"><span>대표 조감도</span></button>
+    <button class="galleryCard placeholderCard" data-open-placeholder="1단지 배치도"><div>1BL<br><b>MASTER PLAN</b></div><span>1단지 배치도</span></button>
+    <button class="galleryCard placeholderCard" data-open-placeholder="2단지 배치도"><div>2BL<br><b>MASTER PLAN</b></div><span>2단지 배치도</span></button>
+    <button class="galleryCard placeholderCard" data-open-placeholder="커뮤니티"><div>XI<br><b>COMMUNITY</b></div><span>커뮤니티</span></button>
+  </div>
+  <div class="galleryNotice">※ 현재 패키지에는 대표 조감도가 포함되어 있으며, 배치도·평면도·커뮤니티 공식 이미지는 권리 확인 후 추가하면 자동으로 갤러리에 연결됩니다.</div>
+</section>
+<section class="floor" id="floor">
+  <div class="sectionKicker darkKicker">FLOOR PLAN</div>
+  <h2>주택형을 비교하고<br><em>내게 맞는 공간</em>을 찾아보세요.</h2>
+  <p class="floorIntro">공식 홈페이지에서 제공하는 실제 평면 안내와 연결해 확인할 수 있도록 구성했습니다.</p>
+  <div class="typeTabs">
+    <button class="typeTab active" data-type="75">75㎡</button>
+    <button class="typeTab" data-type="84">84㎡ A·B·C·D</button>
+    <button class="typeTab" data-type="102">102㎡</button>
+    <button class="typeTab" data-type="124">124㎡</button>
+    <button class="typeTab" data-type="166">166㎡P</button>
+  </div>
+  <div class="typePanel active" id="type-75"><b>75㎡</b><strong>실용적인 주거형</strong><p>전용 75㎡. 실제 평면도와 공급세대수는 공식 모집공고 및 평면 안내에서 확인하세요.</p></div>
+  <div class="typePanel" id="type-84"><b>84㎡ A·B·C·D</b><strong>가장 폭넓은 선택지</strong><p>84A·84B·84C·84D로 세분화된 주택형입니다. 단지별 공급 여부가 다를 수 있습니다.</p></div>
+  <div class="typePanel" id="type-102"><b>102㎡</b><strong>여유로운 중대형</strong><p>가족 구성과 공간 활용을 고려하는 수요자를 위한 중대형 타입입니다.</p></div>
+  <div class="typePanel" id="type-124"><b>124㎡</b><strong>넉넉한 생활공간</strong><p>넓은 면적과 공간 구성을 원하는 수요자를 위한 타입입니다.</p></div>
+  <div class="typePanel" id="type-166"><b>166㎡P</b><strong>최상위 펜트하우스</strong><p>공식 사업개요에 166P㎡ 타입이 확인됩니다. 세부 공급 여부와 조건은 모집공고를 확인하세요.</p></div>
+  <div class="floorActions">
+    <a class="floorLink" href="https://www.xi-home.kr/평면타입/" target="_blank" rel="noopener">공식 평면타입 보기 ↗</a>
+    <a class="floorLink" href="https://xi-heritage.co.kr/분양안내/" target="_blank" rel="noopener">공식 분양안내 보기 ↗</a>
   </div>
 </section>
 
+<section class="sales" id="sales">
+  <div class="sectionKicker">SALES INFORMATION</div>
+  <h2>분양조건을<br><em>한눈에 확인하세요.</em></h2>
+  <p class="salesIntro">2026년 7월 10일 입주자모집공고 기준으로 공개된 내용을 중심으로 구성했습니다.</p>
+  <div class="priceGrid">
+    <article><span>75㎡</span><strong>6억 6,980만원~<br>7억 3,380만원</strong><small>공급금액 범위</small></article>
+    <article><span>84㎡ A·B·C·D</span><strong>7억 1,200만원~<br>7억 9,400만원</strong><small>타입·층별 상이</small></article>
+    <article><span>102㎡</span><strong>8억 2,210만원~<br>9억 710만원</strong><small>타입·층별 상이</small></article>
+    <article><span>124㎡</span><strong>9억 9,600만원~<br>10억 6,300만원</strong><small>타입·층별 상이</small></article>
+    <article class="widePrice"><span>166㎡P · PH</span><strong>20억 7,730만원</strong><small>펜트하우스 공급금액</small></article>
+  </div>
+  <div class="contractBox">
+    <div><small>계약금</small><b>10%</b></div>
+    <div><small>중도금</small><b>60%</b></div>
+    <div><small>잔금</small><b>30%</b></div>
+    <div class="contractText"><strong>계약조건</strong><p>중도금은 6회 분할 납부 구조로 안내되고 있습니다. 실제 납부일정과 옵션·발코니 확장비는 모집공고문을 반드시 확인하세요.</p></div>
+  </div>
+  <div class="sourceLinks">
+    <a href="https://xi-heritage.co.kr/분양안내/" target="_blank" rel="noopener">공식 분양안내 ↗</a>
+    <a href="https://www.xi-home.kr/단지배치/" target="_blank" rel="noopener">단지배치도 ↗</a>
+    <a href="https://www.xi-home.kr/평면타입/" target="_blank" rel="noopener">평면타입 ↗</a>
+  </div>
+  <p class="legalNote">※ 위 금액은 공개된 2026년 7월 10일 입주자모집공고 기준 자료를 요약한 것입니다. 단지·주택형·층·향·옵션에 따라 실제 금액이 달라질 수 있으므로 계약 전 공식 모집공고문을 확인해야 합니다.</p>
+</section>
 
+<section class="schedule" id="schedule">
+  <div class="sectionKicker">SUBSCRIPTION HISTORY</div>
+  <h2>청약 일정은<br><em>이렇게 진행되었습니다.</em></h2>
+  <p class="scheduleLead">2026년 7월 10일 입주자모집공고 기준 청약 일정을 정리했습니다.</p>
+  <div class="scheduleGrid">
+    <div><span>07.20</span><strong>특별공급</strong><p>청약 접수</p><em>완료</em></div>
+    <div><span>07.21</span><strong>1순위</strong><p>청약 접수</p><em>완료</em></div>
+    <div><span>07.22</span><strong>2순위</strong><p>청약 접수</p><em>완료</em></div>
+    <div><span>07.28</span><strong>당첨자 발표</strong><p>개별 조회</p><em>완료</em></div>
+  </div>
+  <div class="scheduleNote"><b>모집공고</b><span>2026.07.10</span><b>정당계약</b><span>2026.08.10 ~ 08.12</span></div>
+  <p class="legalNote">※ 현재는 위 청약 및 정당계약 일정이 지난 상태입니다. 이후 잔여세대·선착순계약 여부와 조건은 공식 안내 및 상담을 통해 확인해야 합니다.</p>
+</section>
 
+<section class="current" id="current">
+  <div class="currentBadge">CURRENT · 2026.08</div>
+  <div class="currentGrid">
+    <div>
+      <div class="sectionKicker darkKicker">NOW AVAILABLE INFORMATION</div>
+      <h2>지금 궁금한 것은<br><em>현재 조건</em>입니다.</h2>
+      <p>청약 일정이 종료된 현재는 잔여세대, 선착순계약 진행 여부, 타입별 잔여 물량과 실제 계약조건을 확인하는 것이 중요합니다.</p>
+    </div>
+    <div class="currentCards">
+      <article><span>01</span><strong>잔여세대</strong><p>현재 남아 있는 타입·동·호수 여부를 상담으로 확인</p></article>
+      <article><span>02</span><strong>계약조건</strong><p>실제 계약 시점의 납부조건과 옵션비 확인</p></article>
+      <article><span>03</span><strong>주택형</strong><p>75㎡부터 166㎡P까지 타입별 선택 가능 여부 확인</p></article>
+      <article><span>04</span><strong>방문상담</strong><p>공식 안내 및 상담을 통해 최신 정보를 확인</p></article>
+    </div>
+  </div>
+  <div class="currentCta">
+    <div><b>현재 잔여세대·계약조건이 궁금하신가요?</b><span>최신 조건을 확인한 후 상담을 진행하세요.</span></div>
+    <a class="btn gold" href="#contact">현재 조건 상담하기</a>
+  </div>
+  <p class="legalNote">※ 잔여세대 및 선착순계약 여부는 실시간 변동될 수 있으므로 홈페이지에 임의로 특정 물량을 표시하지 않고 상담 시 확인하도록 구성했습니다.</p>
+</section>
 <section class="floor" id="floor">
   <div class="sectionKicker darkKicker">FLOOR PLAN</div>
   <h2>우리 가족에게 맞는<br><em>주택형을 찾아보세요.</em></h2>
@@ -171,7 +275,9 @@
     <div class="contractText"><strong>계약조건</strong><p>중도금은 6회 분할 납부 구조로 안내되고 있습니다. 실제 납부일정과 옵션·발코니 확장비는 모집공고문을 반드시 확인하세요.</p></div>
   </div>
   <div class="sourceLinks">
-    <a href="https://xi-heritage.co.kr/분양안내/" target="_blank" rel="noopener">공식 분양안내 확인 ↗</a>
+    <a href="https://xi-heritage.co.kr/분양안내/" target="_blank" rel="noopener">공식 분양안내 ↗</a>
+    <a href="https://www.xi-home.kr/단지배치/" target="_blank" rel="noopener">단지배치도 ↗</a>
+    <a href="https://www.xi-home.kr/평면타입/" target="_blank" rel="noopener">평면타입 ↗</a>
   </div>
   <p class="legalNote">※ 위 금액은 공개된 2026년 7월 10일 입주자모집공고 기준 자료를 요약한 것입니다. 단지·주택형·층·향·옵션에 따라 실제 금액이 달라질 수 있으므로 계약 전 공식 모집공고문을 확인해야 합니다.</p>
 </section>
@@ -196,20 +302,86 @@
   <details><summary>방문예약은 어떻게 하나요?</summary><p>아래 상담예약 폼을 이용해 희망 일정을 남겨주세요. 현재 폼은 데모이며 실제 운영 시 접수 시스템을 연결합니다.</p></details>
 </section>
 
+
+<section class="officialFacts" id="officialFacts">
+  <div class="sectionKicker">OFFICIAL PROJECT FACTS</div>
+  <h2>공식 자료로 확인하는<br><em>사업의 핵심</em></h2>
+  <p class="officialLead">공식 대표 홈페이지의 사업개요·단지안내·평면 안내를 기준으로 정리했습니다.</p>
+  <div class="officialFactGrid">
+    <article><span>1BL</span><strong>1,069세대</strong><p>오산시 양산동 223번지 일원<br>지하 2층 ~ 지상 최고 27층</p></article>
+    <article><span>2BL</span><strong>714세대</strong><p>오산시 양산동 328-2번지 일원<br>지하 2층 ~ 지상 최고 27층</p></article>
+    <article><span>TYPE</span><strong>75~166㎡</strong><p>75 · 84A · 84B · 84C · 84D<br>102 · 124 · 166P</p></article>
+    <article><span>MOVE-IN</span><strong>2028년 하반기 예정</strong><p>입주 예정 시기는 공식 사업개요 기준이며 변경될 수 있습니다.</p></article>
+  </div>
+  <div class="officialButtons">
+    <a href="https://xi-heritage.co.kr/%EC%82%AC%EC%97%85%EA%B0%9C%EC%9A%94/" target="_blank" rel="noopener">사업개요 원문 ↗</a>
+    <a href="https://xi-heritage.co.kr/%EB%B6%84%EC%96%91%EC%95%88%EB%82%B4/" target="_blank" rel="noopener">모집공고 안내 ↗</a>
+    <a href="https://www.xi-home.kr/%ED%8F%89%EB%A9%B4%ED%83%80%EC%9E%85/" target="_blank" rel="noopener">평면타입 원문 ↗</a>
+  </div>
+</section>
+
+
+<section class="consultant" id="consultant">
+  <div class="consultantInner">
+    <div class="consultantBadge">PREMIUM CONSULTING</div>
+    <div class="consultantGrid">
+      <div>
+        <div class="sectionKicker">OSAN HERITAGE XI · CONSULTANT</div>
+        <h2>복잡한 분양정보를<br><em>쉽게 설명해드리겠습니다.</em></h2>
+        <p>분양가, 주택형, 청약 이력, 현재 계약조건 등 고객이 궁금한 내용을 하나씩 확인하고 상담할 수 있도록 구성했습니다.</p>
+      </div>
+      <div class="consultantCard">
+        <div class="consultantLogo">김영태</div>
+        <small>오산 헤리티지자이 분양상담</small>
+        <strong>1544-5403</strong>
+        <p>방문상담 · 타입상담 · 현재조건 확인</p>
+        <a class="btn gold" href="tel:15445403">전화 상담하기</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="conversion" id="conversion">
+  <div class="conversionWrap">
+    <div>
+      <div class="sectionKicker">SMART CONSULTING</div>
+      <h2>어떤 타입이 나에게 맞을지<br><em>1분이면 상담 준비 완료</em></h2>
+      <p>희망 평형과 관심 내용을 먼저 선택하면 상담사가 더 빠르게 안내할 수 있도록 구성했습니다.</p>
+    </div>
+    <div class="consultSteps">
+      <div class="consultChoice"><span>STEP 1</span><b>희망 주택형</b><div class="chips" id="typeChips">
+        <button data-value="75㎡">75㎡</button><button data-value="84㎡">84㎡</button><button data-value="102㎡">102㎡</button><button data-value="124㎡">124㎡</button><button data-value="166㎡P">166㎡P</button>
+      </div></div>
+      <div class="consultChoice"><span>STEP 2</span><b>관심 목적</b><div class="chips" id="purposeChips">
+        <button data-value="실거주">실거주</button><button data-value="투자검토">투자검토</button><button data-value="청약문의">청약문의</button><button data-value="잔여세대">현재조건</button>
+      </div></div>
+      <a href="#contact" class="btn gold consultGo">선택 내용으로 상담 신청</a>
+      <small id="consultSummary">선택한 내용은 상담폼에 자동으로 반영됩니다.</small>
+    </div>
+  </div>
+</section>
+
 <section class="contact" id="contact">
-  <div><div class="sectionKicker">CONTACT</div><h2>오산 헤리티지자이를<br>더 자세히 알아보세요.</h2><p>분양가·청약·평면·방문예약 중 궁금한 내용을 남겨주세요.</p></div>
-  <form onsubmit="return demoSubmit(event)">
+  <div><div class="sectionKicker">CONTACT</div><a class="phoneLarge" href="tel:15445403">1544-5403</a><h2>현재 오산 헤리티지자이<br>조건을 확인해보세요.</h2><p>분양가·청약·평면·방문예약 중 궁금한 내용을 남겨주세요.</p></div>
+  <form id="consultForm" onsubmit="return demoSubmit(event)"><input type="hidden" id="selectedType" name="selectedType"><input type="hidden" id="selectedPurpose" name="selectedPurpose">
     <label>성함<input required placeholder="성함을 입력해주세요"></label>
     <label>연락처<input required inputmode="tel" placeholder="010-0000-0000"></label>
     <label>희망 평형<select><option>선택해주세요</option><option>84A</option><option>84B</option><option>84C</option></select></label>
-    <label>문의내용<textarea rows="4" placeholder="궁금하신 내용을 입력해주세요"></textarea></label>
+    <label>문의내용<textarea id="message" rows="4" placeholder="궁금하신 내용을 입력해주세요"></textarea></label>
     <label class="agree"><input type="checkbox" required> 개인정보 수집·이용에 동의합니다.</label>
-    <button class="btn gold wide">상담예약 신청</button>
+    <button class="btn gold wide">현재 조건 상담 신청</button>
     <small>※ 현재는 데모 폼입니다. 실제 운영 시 상담 접수 시스템을 연결합니다.</small>
   </form>
 </section>
 </main>
-<footer><img src="images/logo-transparent.png" alt="오산 헤리티지자이"><p>OSAN HERITAGE XI · PREMIUM DIGITAL MODEL HOUSE</p><small>※ 본 페이지는 제작·검토용 데모입니다. 실제 분양가·청약자격·일정·개발계획 등은 최신 공식 자료 확인 후 반영해야 합니다.</small></footer>
-<div class="mobileBar"><a href="tel:01000000000">전화상담</a><a href="#contact">관심고객</a><a href="#contact">방문예약</a></div>
+<section class="trust"><div><b>정확한 정보</b><span>공식 자료 기준으로 안내</span></div><div><b>현재 조건</b><span>실시간 변동 사항은 상담 확인</span></div><div><b>맞춤 상담</b><span>희망 타입부터 함께 검토</span></div></section><footer><a class="footerPhone" href="tel:15445403">☎ 1544-5403</a><img src="images/logo-transparent.png" alt="오산 헤리티지자이"><p>OSAN HERITAGE XI · PREMIUM DIGITAL MODEL HOUSE</p><small>※ 본 페이지는 제작·검토용 데모입니다. 실제 분양가·청약자격·일정·개발계획 등은 최신 공식 자료 확인 후 반영해야 합니다.</small></footer>
+<div class="mobileBar"><a href="tel:15445403">1544-5403</a><a href="#contact">관심고객</a><a href="#contact">방문예약</a></div>
+<div class="imageModal" id="imageModal" aria-hidden="true">
+  <button class="modalClose" id="modalClose" aria-label="닫기">×</button>
+  <div class="modalInner">
+    <img id="modalImage" src="" alt="">
+    <div class="modalPlaceholder" id="modalPlaceholder"><strong id="modalTitle"></strong><p>이 위치에 공식 이미지를 추가하면 실제 배치도·커뮤니티 이미지를 크게 표시할 수 있습니다.</p></div>
+  </div>
+</div>
 <script src="js/script.js"></script>
 </body></html>
