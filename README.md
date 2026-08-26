@@ -188,3 +188,16 @@ images 폴더에 공식 이미지 파일을 추가한 뒤 index.html의 placehol
 - Official pages used for actual plan and complex imagery
 - Consultant: 김영태
 - Phone: 010-8900-8869
+
+## V22 — Real image display fix
+- User-provided real hero image is bundled locally at images/hero.jpg
+- User-provided brand/logo image is bundled locally at images/logo-transparent.png
+- Hero is rendered as a real <img>, not a CSS placeholder/background dependency
+- Mobile uses a responsive aspect ratio so the full hero artwork remains visible
+- Official complex/unit pages remain linked for actual plan/layout imagery
+
+## V23 — Image-first user asset edition
+- User-supplied actual landing image bundled as images/main-landing.jpg
+- User-supplied brand banner bundled as images/brand-banner.jpg
+- Main visual, brand strip and consultation CTA now render actual local image files
+- No dependence on remote image URLs for the primary visual
