@@ -20,3 +20,6 @@ Settings → Pages → Deploy from a branch → main → /(root) → Save.
 
 ## 중요
 실제 분양 광고에 사용하는 분양가·청약자격·일정·개발계획·커뮤니티 시설·연락처 등은 최신 공식자료로 교체해야 합니다.
+
+## 업로드 시 가장 중요한 점
+GitHub 저장소의 최상위에 `index.html`, `css`, `js`, `images`가 바로 보여야 합니다. `osan-heritage-xi-v2_1/` 같은 바깥 폴더를 한 번 더 올리면 안 됩니다.
