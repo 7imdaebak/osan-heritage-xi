@@ -128,3 +128,34 @@ document.querySelectorAll('.budgetGrid button').forEach(btn=>{
     budgetMessage.textContent=msg+'  상담: 010-8900-8869';
   });
 });
+
+// V17 guided consultation builder
+const leadState={type:'',topic:'',method:''};
+document.querySelectorAll('.builderOptions').forEach(group=>{
+  group.querySelectorAll('button').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      group.querySelectorAll('button').forEach(x=>x.classList.remove('active'));
+      btn.classList.add('active');
+      leadState[group.dataset.group]=btn.dataset.value;
+      updateLeadSummary();
+    });
+  });
+});
+function updateLeadSummary(){
+  const type=leadState.type||'관심 타입 미선택';
+  const topic=leadState.topic||'문의 내용 미선택';
+  const method=leadState.method||'상담 방식 미선택';
+  const text=`${type} · ${topic} · ${method}`;
+  const box=document.getElementById('leadSummary');
+  if(box) box.querySelector('strong').textContent=text;
+  const call=document.getElementById('leadCall');
+  if(call) call.href='tel:01089008869';
+}
+const copyBtn=document.getElementById('copyLead');
+if(copyBtn){
+  copyBtn.addEventListener('click',async()=>{
+    const text=`오산 헤리티지자이 상담 요청\n관심 타입: ${leadState.type||'미선택'}\n관심 내용: ${leadState.topic||'미선택'}\n상담 방식: ${leadState.method||'미선택'}\n상담전화: 010-8900-8869`;
+    try{await navigator.clipboard.writeText(text);copyBtn.textContent='복사 완료';setTimeout(()=>copyBtn.textContent='상담내용 복사',1500);}
+    catch(e){alert(text);}
+  });
+}
